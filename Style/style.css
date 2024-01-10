@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria:#000000;
+    --cor-secundaria:#f6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-quaternária:#272727;
+
+    --fonte-primaria:'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+
+    --tamanho-fonttitulo:2.25rem;
+    --tamanho-fonttexto:1.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 1% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:5.125rem;
+}
+
+.apresentacao__conteudo {
+    width:50%;
+    /*width: 38.44rem;*/
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: var(--tamanho-fonttitulo);
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size:var(--tamanho-fonttexto);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.apresentacao_links_subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: var(--tamanho-fonttexto);
+}
+
+.apresentacao_navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.125rem solid var(--cor-terciaria);
+    width: 90%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: var(--tamanho-fonttexto);
+    font-weight: 600;
+    padding: 1.34rem 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao_navegacao:hover {
+    background-color:var(--cor-quaternária);
+    cursor: pointer;
+}
+
+.apresentacao_imagem {
+    width: 30%;
+    /*width: 20rem;
+    height: 30rem;*/
+    border: 0.06rem solid var(--cor-terciaria);
+
+}
+
+.rodape{
+    padding: 1rem 0rem 1rem 0rem;
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    font-size: var(--tamanho-fonttexto);
+    font-weight: 600;
+}
+
+.cabecalho{
+    padding:2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link{
+    font-size: var(--tamanho-fonttexto);
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.cabecalho__menu__link:hover{
+    color:var(--cor-quaternária);
+}
+
+.cabecalho__menu_about{
+    display: flex;
+    gap: 5rem;
+}
+
+.apresentacao_imagem_jogo {
+    display: inline-block;
+    width:100%;
+    border: 1px solid var(--cor-terciaria);
+    
+}
+
+.apresentacao_links_link_about {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.125rem solid var(--cor-terciaria);
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: var(--tamanho-fonttexto);
+    font-weight: 600;
+    padding: 1.34rem 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);   
+}
+.apresentacao_links_link_about:hover {
+    background-color: var(--cor-quaternária);
+    cursor: pointer;
+}
+
+.apresentacao_about {
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo_about {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    gap: 2.5rem;
+}
+
+@media (max-width:75rem) {
+    .cabecalho {
+        padding:1%
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .cabecalho__menu_about{
+        justify-content: left;
+        padding-left: 7%;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+    .apresentacao_imagem{
+        width: 18.75rem;
+    }
+}
